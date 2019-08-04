@@ -1,0 +1,12 @@
+<div class="contents row">
+    <%= form_tag("/tweets/#{@tweet.id}", method: :patch ) do %>
+      <h1>
+       　ヽ(￣д￣;)ノ=3=3=3
+      </h1>
+      <strong>
+      　　　　　　　　　　　　早く編集してよ！！
+      </strong>
+      <textarea cols="30" name="text" placeholder="text" rows="10"><%= @tweet.text %></textarea>
+      <a class="waves-effect waves-light btn-large"><input type="submit" value="SENT"></a>
+    <% end %>
+  </div>

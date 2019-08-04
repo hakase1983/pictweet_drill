@@ -1,0 +1,10 @@
+<div class="contents row">
+<h3>Bl@g 一覧</h3>
+              <% @tweets.each do |tweet| %>
+                <%= render partial: "tweet", locals: { tweet: tweet } %>
+                <% end %>
+              <span class="#4a148c purple darken-4"><%= paginate(@tweets) %></>
+</div>
+
+
+            
